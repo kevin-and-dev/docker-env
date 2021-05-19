@@ -12,8 +12,9 @@
     "mongoose": "^5.12.10"
   },
   "scripts": {
-    "reset-mongo": "rm -dfr .docker/mongodb/data; mkdir .docker/mongodb/data .docker/mongodb/data/log .docker/mongodb/data/db;",
+    "reset-mongo": "rm -dfr .docker/mongodb/data/ ./node_modules ./yarn.lock; mkdir ./node_modules .docker/mongodb/data .docker/mongodb/data/log .docker/mongodb/data/db;",
     "docker-full-reset": "docker compose rm -fsv",
     "docker-rebuild": "docker compose up --build --force-recreate --renew-anon-volumes",
+    "start": "yarn run reset-mongo && yarn run docker-full-reset && yarn run docker-rebuild"
   }
 }
