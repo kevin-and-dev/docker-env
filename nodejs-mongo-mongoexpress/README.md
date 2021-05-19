@@ -4,6 +4,20 @@
 ![](../logo-nodejs-mongodb-pm2-docker.png)
 
 ---
+
+#### Run
+###### by script(s) from package.json
+Run the following package script from `terminal` or `VSCode NPM SCRIPTS` makes no different
+
+by Terminal command
+`yarn run start`
+
+by VSCode
+> - go to `NPM SCRIPTS` on bottom left corner
+> - click `play` button on the row `start`
+
+---
+
 ###### Components
 #### Nodejs
 - Based on tag [node:14-slim](https://hub.docker.com/_/node?tab=tags&page=1&ordering=last_updated&name=14-slim "14-slim") with [PM2](https://pm2.keymetrics.io/) in deamon & watch mode.
