@@ -1,0 +1,19 @@
+{
+  "name": "docker-nodejs-mongo-mongoexpress",
+  "description": "",
+  "keywords": ["docker container", "nodejs", "node", "mongodb", "mongo express", "nodejs development container", "mongodb development container"],
+  "version": "1.0.0",
+  "main": "src/app.js",
+  "author": "Kevin Chu <dev@kevin-and-idea.com>",
+  "repository": "",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "mongoose": "^5.12.10"
+  },
+  "scripts": {
+    "reset-mongo": "rm -dfr .docker/mongodb/data; mkdir .docker/mongodb/data/log .docker/mongodb/data/db;",
+    "docker-full-reset": "docker compose rm -fsv",
+    "docker-rebuild": "docker compose up --build --force-recreate --renew-anon-volumes",
+  }
+}
