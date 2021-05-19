@@ -12,7 +12,7 @@
     "mongoose": "^5.12.10"
   },
   "scripts": {
-    "reset-mongo": "rm -dfr .docker/mongodb/data; mkdir .docker/mongodb/data/log .docker/mongodb/data/db;",
+    "reset-mongo": "rm -dfr .docker/mongodb/data; mkdir .docker/mongodb/data .docker/mongodb/data/log .docker/mongodb/data/db;",
     "docker-full-reset": "docker compose rm -fsv",
     "docker-rebuild": "docker compose up --build --force-recreate --renew-anon-volumes",
   }
